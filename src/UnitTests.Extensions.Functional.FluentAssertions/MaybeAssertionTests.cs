@@ -17,10 +17,11 @@ namespace UnitTests.Extensions.Functional.FluentAssertions
             _fixture = new Fixture();
         }
 
-        [Fact(DisplayName ="MA-001: Maybe from value should have a some value")]
+        [Fact(DisplayName ="MA-001: Maybe from value should have some value")]
         public void MA001()
         {
-            var maybe = Maybe.From(_fixture.Create<string>());
+			var value = _fixture.Create<string>();
+			var maybe = Maybe.From(value);
             maybe.Should().HaveSomeValue();
         }
 

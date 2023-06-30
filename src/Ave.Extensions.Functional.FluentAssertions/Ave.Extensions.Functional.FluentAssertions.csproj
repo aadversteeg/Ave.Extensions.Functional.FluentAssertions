@@ -3,10 +3,11 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>8</LangVersion>
+    <PackageProjectUrl>https://github.com/aadversteeg/Ave.Extensions.Functional.FluentAssertions</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Ave.Extensions.Functional" Version="0.0.2-beta" />
+    <PackageReference Include="Ave.Extensions.Functional.Core" Version="0.0.4-beta" />
     <PackageReference Include="FluentAssertions" Version="6.8.0" />
   </ItemGroup>
 
